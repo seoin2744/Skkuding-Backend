@@ -1,0 +1,15 @@
+meta {
+  name: 맛집 검색 요청
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/restaurants/search?name=청년
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: 청년
+}
